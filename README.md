@@ -6,7 +6,7 @@ Projeto simples em Python utilizando Programação Orientada a Objetos (POO) par
 
 ## 🚀 Funcionalidades
 
-- Adicionar livros à biblioteca  
+- Adicionar livros à biblioteca (Banco de Dados)  
 - Remover livros pelo ISBN  
 - Listar todos os livros cadastrados  
 - Buscar livros pelo título  
@@ -21,6 +21,7 @@ estudo_OOP_biblioteca/
 ├── biblioteca.py      # Classe Biblioteca
 ├── livro.py           # Classe Livro
 ├── main.py            # Script principal com testes
+├── db_manager.py      # Cria banco de dados
 ├── .gitignore         # Arquivos ignorados pelo Git
 └── README.md          # Documentação do projeto
 ```
@@ -32,7 +33,7 @@ estudo_OOP_biblioteca/
 - `livro.py`: Define a classe `Livro`, com título, autor, ano e ISBN. Possui um método `__str__` para exibição formatada.
 - `biblioteca.py`: Define a classe `Biblioteca`, que mantém uma lista de livros e permite adicionar, remover, listar e buscar livros.
 - `main.py`: Cria objetos `Livro`, adiciona na biblioteca, exibe a lista, busca por título e remove livro por ISBN.
-
+- `db_manager`: Cria o banco de dados do sistema
 ---
 
 ## ▶️ Como Executar
@@ -58,7 +59,7 @@ python main.py
 
 - Python 3
 - Programação Orientada a Objetos (POO)
-
+- SQLite 
 ---
 
 ## 📄 .gitignore
@@ -66,6 +67,7 @@ python main.py
 ```
 .venv/
 __pycache__/
+*.db
 ```
 
 ---
